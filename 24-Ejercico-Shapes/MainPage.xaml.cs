@@ -32,9 +32,29 @@ namespace _24_Ejercico_Shapes
             mueveTriangulo.Begin();
         }
 
-        private void Button_GirarElipse(object sender, RoutedEventArgs e)
+        private void Button_elipse(object sender, RoutedEventArgs e)
         {
-            desaparece.Begin();
+            girarElipse.Begin();
+        }
+
+        private void Button_Trump(object sender, RoutedEventArgs e)
+        {
+            saludaTramp.Begin();
+        }
+        private void Button_newell(object sender, RoutedEventArgs e)
+        {
+            saludaNewell.Begin();
+        }
+        private void Button_obama(object sender, RoutedEventArgs e)
+        {
+            saludaObama.Begin();
+        }
+
+        private void Button_lucha(object sender, RoutedEventArgs e)
+        {
+            saludaTramp.Begin();
+            saludaObama.Begin();
+            saludaNewell.Begin();
         }
     }
 }
