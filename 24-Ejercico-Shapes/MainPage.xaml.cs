@@ -26,5 +26,15 @@ namespace _24_Ejercico_Shapes
         {
             this.InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            mueveTriangulo.Begin();
+        }
+
+        private void Button_GirarElipse(object sender, RoutedEventArgs e)
+        {
+            desaparece.Begin();
+        }
     }
 }
