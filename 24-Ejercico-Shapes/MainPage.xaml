@@ -7,7 +7,9 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-    </Grid>
+    <Canvas>
+        <Polygon Points="10,110,60,10,110,110" Fill="Red" Stroke="Black" Canvas.Top="50" Canvas.Left="150"/>
+        <Polygon Points="0,0,100,0,130,10,100,30,0,30" Fill="Wheat" Canvas.Top="200" Canvas.Left="150"/>
+       
+    </Canvas>
 </Page>
