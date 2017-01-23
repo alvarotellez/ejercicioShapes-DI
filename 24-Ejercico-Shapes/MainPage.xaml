@@ -10,8 +10,11 @@
         <Storyboard x:Name="mueveTriangulo">
             <DoubleAnimation Storyboard.TargetName="triangulo" Storyboard.TargetProperty="(Canvas.Left)" From="50" To="150" Duration="0:0:50"></DoubleAnimation>
         </Storyboard>
+        <Storyboard x:Name="mueveRectangulo">
+            <DoubleAnimation Storyboard.TargetName="flecha" Storyboard.TargetProperty="(Canvas.Left)" From="80" To="100" Duration="0:0:3" AutoReverse="True"></DoubleAnimation>
+        </Storyboard>
         <Storyboard x:Name="girarElipse">
-            <DoubleAnimation Storyboard.TargetName="elipse" Storyboard.TargetProperty="(RenderTransform).(RotateTransform.Angle)" From="360" To="0" RepeatBehavior="Forever" Duration="0:0:10" />
+            <DoubleAnimation Storyboard.TargetName="elipse" Storyboard.TargetProperty="(RenderTransform).(RotateTransform.Angle)" From="100" To="10" RepeatBehavior="Forever" Duration="0:0:10" />
         </Storyboard>
         <Storyboard x:Name="saludaTramp">
             <DoubleAnimation Storyboard.TargetName="trump" Storyboard.TargetProperty="(RenderTransform).(RotateTransform.Angle)" From="360" To="0" RepeatBehavior="Forever" Duration="0:0:4" />
@@ -29,7 +32,7 @@
         <Path Data="M252,1188" Fill="#FF42392A" Height="0" Canvas.Left="252" Stretch="Fill" Canvas.Top="1188" UseLayoutRounding="False" Width="0"/>
         <Ellipse x:Name="elipse" Fill="#FF2E422A" Height="176" Canvas.Left="108" Canvas.Top="344" Width="242">
             <Ellipse.RenderTransform>
-                <RotateTransform/>
+                <RotateTransform Angle="0" CenterX="50" CenterY="50"/>
             </Ellipse.RenderTransform>
         </Ellipse>
         <Path Data="M196,760" Fill="#FFF4F4F5" Height="0" Canvas.Left="196" Stretch="Fill" Stroke="Black" Canvas.Top="760" UseLayoutRounding="False" Width="0"/>
@@ -56,6 +59,7 @@
         </Image>
         <Button Content="Hello obama!!" Click="Button_obama" Canvas.Left="480" Canvas.Top="168"/>
         <Button Content="A luchar boyss" Click="Button_lucha" Canvas.Left="480" Canvas.Top="205"/>
+        <Button Content="Anda pa lante" Click="Button_palante" Canvas.Left="480" Canvas.Top="242"/>
     </Canvas>
 
 </Page>

@@ -56,5 +56,9 @@ namespace _24_Ejercico_Shapes
             saludaObama.Begin();
             saludaNewell.Begin();
         }
+        private void Button_palante(object sender, RoutedEventArgs e)
+        {
+            mueveRectangulo.Begin();
+        }
     }
 }
